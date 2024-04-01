@@ -1,0 +1,131 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-column {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    transition: all 0.3s ease; /* Add transition for smooth changes */
+  }
+  
+  .task-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Adjust the gap between task cards */
+  }
+  
+  .task-card {
+    width: 250px; /* Set a fixed width for all task cards */
+    border: 1px solid #fffbfb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust the margin between task cards */
+    background-color: #f9f9f9; /* Background color for task cards */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .task-card:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+  }
+  
+  .description {
+    max-height: 60px; /* Set maximum height for the task description */
+    overflow: hidden; /* Hide overflow content */
+    word-wrap: break-word; /* Enable word wrapping */
+  }
+  
+  .button-container {
+    margin-top: 10px; /* Adjust spacing between buttons and task content */
+  }
+  
+  .task {
+    /* Other styles for task content */
+    /* Set maximum height for the task content */
+    /* Enable vertical scrolling if content exceeds the max height */
+    word-wrap: break-word; /* Allow long words to wrap to the next line */
+  }
+  
+  .task-item {
+    background-color: #fcfafa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Add transition for smooth background color change */
+  }
+  
+  .task-item:hover {
+    background-color: #fff9f9; /* Change background color on hover */
+  }
+  
+  /* Styling for different status headings */
+  .task-column.pending {
+    border-color: #807c7b;
+    background-color: #f0eff0;
+    width: 200px;
+    margin-top: 9px;
+    animation: slideIn 0.5s ease, fadeIn 0.5s ease; 
+  }
+  
+  .task-column.inprogress {
+    border-color: #df7238;
+    background-color: #f4dba9;
+    width: 200px;
+    margin-top: 9px;
+    animation: slideIn 0.5s ease, fadeIn 0.5s ease; 
+  }
+  
+  .task-column.completed {
+    border-color: #48e650;
+    background-color: #97f3a5;
+    width: 200px;
+    margin-top: 9px;
+    animation: slideIn 0.5s ease, fadeIn 0.5s ease; 
+  }
+  
+  .task-column.deployed {
+    border-color: #3f2de1;
+    background-color: #959ff4;
+    width: 200px;
+    margin-top: 9px;
+    animation: slideIn 0.5s ease, fadeIn 0.5s ease; 
+  }
+  
+  .task-column.deferred {
+    border-color: #ea846e;
+    background-color: #f19898;
+    width: 200px;
+    margin-top: 9px;
+    animation: slideIn 0.5s ease, fadeIn 0.5s ease; 
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .logo-container {
+    float: right;
+    margin-top: -70px; /* Adjust this value as needed */
+  }
+  
+  .logo {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px;
+  }
