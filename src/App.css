@@ -1,0 +1,319 @@
+/* App.css */
+
+
+.task-columns {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+.task-list {
+  list-style: none;
+  padding: 0;
+} 
+
+.task-item {
+  position: relative;
+  background-color: #e3d4d4; /* Set background color for task items */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Close button styles */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Form field styles */
+.form-group {
+  margin-bottom: 10px; /* Reduce margin between form groups */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #f9f7f7;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Hover animation for input fields */
+.modal-content input[type="text"]:hover,
+.modal-content input[type="date"]:hover,
+.modal-content select:hover,
+.modal-content textarea:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+.task-item .dropdown {
+  margin-left: 180px; /* Adjust the margin as needed */
+}
+
+
+.task-item:hover {
+  transform: translateY(-3px); /* Move the task list box slightly upwards on hover */
+}
+
+.task-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  cursor: pointer;
+  background-color: #dc3545; /* Delete button background color */
+  color: #fff; /* Delete button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.task-item button:hover {
+  background-color: #c82333; /* Darker background color on hover */
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item div {
+  width: 100%; /* Ensure the content div fills the entire width of the task item */
+}
+
+.task-item h3 {
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 5px; /* Add some bottom margin for separation */
+}
+
+.task-item .task-description {
+  max-width: 100%; /* Limit the maximum width of the task description */
+  overflow-wrap: break-word; /* Allow long words to break into multiple lines */
+}
+
+.task-item .task-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Adjust the gap between metadata items */
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0b0b0b;
+}
+
+.priority-badge {
+  margin-left: auto;
+}
+.priority-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.priority-btn.low {
+  background-color: green;
+}
+
+.priority-btn.medium {
+  background-color: orange;
+}
+
+.priority-btn.high {
+  background-color: rgb(60, 0, 255);
+}
+/* Add a fixed width and height to the menu */
+.menu {
+  position: absolute;
+  top: 100%; /* Position the menu below the button */
+  left: 0;
+  width: 200px; /* Set the desired width */
+  height: auto; /* Set the desired height */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* Additional styles... */
+}
+
+/* Add overflow and scrolling if needed */
+.menu {
+  overflow: hidden;
+}
+
+/* Add styles for individual menu items */
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Add hover effect for menu items */
+.menu-item:hover {
+  background-color: #d2caca;
+}
+/* App.css */
+
+/* App.css */
+
+/* Styles for edit task form */
+.edit-task-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom right, #9db1ee, #e8ecee);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.edit-task-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.edit-task-form label,
+.edit-task-form input,
+.edit-task-form textarea,
+.edit-task-form select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-task-form .button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.edit-task-form button {
+  margin-right: 10px;
+  padding: 6px 14px;
+  background-color: #486bde;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-task-form button:last-child {
+  margin-right: 0;
+}
+
+.edit-task-form button:hover {
+  background-color: #0056b3;
+}
+
+.edit-task-form button:last-child:hover {
+  background-color: #c82333;
+}
+
+.filters {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.sort-checkbox {
+  margin-left: auto; /* Adjust margin to align to the right */
+}
+
+
+/* App.css */
+
+/* Styles for modal popup */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 236, 236, 0.674); /* Semi-transparent background */
+  z-index: 1000; /* Ensure the modal is on top of other content */
+}
+
+.modal-content {
+  background: linear-gradient(to bottom right, #bfc3f0, #d79aeb);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Center the modal content */
+.task-form-container {
+  width: 400px;
+  max-width: 90%;
+}
+
+.task-form {
+  margin-top: 20px;
+}
+
+/* Other styles remain unchanged */
